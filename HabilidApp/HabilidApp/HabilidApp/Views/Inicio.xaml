@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Font_icons ="clr-namespace:HabilidApp.Fonts"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HabilidApp.Views.Inicio" BackgroundColor="{StaticResource Background}">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackLayout Margin="40,40,0,0"  Grid.Row="0" Orientation="Horizontal">
+                <Label  Style="{StaticResource Subtitle1}"
+                       Text="Fecha"
+                       HorizontalOptions="Start"
+                       ></Label>
+
+                <Label Margin="200,0,0,0" 
+                       FontFamily="Icons"
+                       Text="{x:Static Font_icons:IconFonts.Star}"
+                       TextColor="Gold"
+                       FontSize="20"
+                       HorizontalOptions="End" ></Label>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="1">
+                <Label Text="Numero"
+                       HorizontalOptions="End"
+                       ></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Orientation="Horizontal">
+                <Button Style="{StaticResource button2}"
+                        FontFamily="Icons"
+                        Text="{x:Static Font_icons:IconFonts.PlusCircled}"
+                        FontSize="20"
+                        Clicked="Nueva_Clicked"></Button>
+                <Label Text="Agregar nueva habilidad"
+                       Style="{StaticResource Subtitle1}"
+                       TextColor="{StaticResource white_font}"></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3">
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox Color="{StaticResource mint}"></CheckBox>
+                    <Button Style="{StaticResource button2}"
+                           Text="Habilidad1"
+                            FontSize="Medium"
+                           TextColor="{StaticResource white_font}"
+                            Clicked="Detalles_Clicked"></Button>
+                </StackLayout>
+
+            </StackLayout>
+
+            <StackLayout Margin="0,0,0,0" Grid.Row="4">
+                <Image Source="nave.png" />
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" Orientation="Horizontal">
+                <Button Style="{StaticResource button1}"
+                        Text="Historial"
+                        Clicked="Historial_Clicked"></Button>
+                <Button Style="{StaticResource button1}"
+                        Text="Perfil"
+                        Clicked="Perfil_Clicked"></Button>
+            </StackLayout>
+            
+            
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

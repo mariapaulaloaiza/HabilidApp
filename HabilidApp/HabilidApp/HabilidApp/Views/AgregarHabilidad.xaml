@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Font_icons ="clr-namespace:HabilidApp.Fonts"
+             x:Class="HabilidApp.Views.AgregarHabilidad" BackgroundColor="{StaticResource Background}">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackLayout Margin="0,40,0,0"  Grid.Row="0" HorizontalOptions="Center">
+                <Label FontFamily="Icons"
+                   Text="{x:Static Font_icons:IconFonts.Award}"
+                    TextColor="Gold"
+                   FontSize="90"></Label>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Entry Placeholder="Nombre de la habilidad"
+                      Style="{StaticResource Entry2}"></Entry>
+            </StackLayout>
+            <StackLayout   Grid.Row="2" HorizontalOptions="Center">
+                <Label Style="{StaticResource Subtitle1}"
+                       Text="Dias disponibles"></Label>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Orientation="Horizontal">
+                <Button Style="{StaticResource buttonDay}"
+                        Text="L"></Button>
+                <Button Style="{StaticResource buttonDay}"
+                        Text="M"></Button>
+                <Button Style="{StaticResource buttonDay}"
+                        Text="X"></Button>
+                <Button Style="{StaticResource buttonDay}"
+                        Text="J"></Button>
+                <Button Style="{StaticResource buttonDay}"
+                        Text="V"></Button>
+                <Button Style="{StaticResource buttonDay}"
+                        Text="S"></Button>
+                <Button Style="{StaticResource buttonDay}"
+                        Text="D"></Button>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Orientation="Horizontal">
+                <StackLayout Margin="0,0,30,0">
+                    <Label Style="{StaticResource Subtitle1}"
+                       Text="Hora de inicio"></Label>
+                    <TimePicker FontFamily="Quicksand-Bold"
+                                TextColor="{StaticResource mint}"></TimePicker>
+                </StackLayout>
+                <StackLayout Margin="0,0,0,0">
+                    <Label Style="{StaticResource Subtitle1}"
+                       Text="Hora de fin"></Label>
+                    <TimePicker FontFamily="Quicksand-Bold"
+                                TextColor="{StaticResource mint}"></TimePicker>
+                </StackLayout>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="5">
+                <Label Style="{StaticResource Subtitle1}"
+                       Text="Fijar recordatorio"></Label>
+                <Switch HorizontalOptions="Start"  IsToggled="false" />
+            </StackLayout>
+            
+            <StackLayout Grid.Row="6">
+                <Button Style="{StaticResource button1}"
+                    Text="Guardar"></Button>
+            </StackLayout>
+            
+            
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
