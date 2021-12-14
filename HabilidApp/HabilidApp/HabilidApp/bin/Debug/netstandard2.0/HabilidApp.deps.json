@@ -12,6 +12,7 @@
           "EntityFramework": "6.4.4",
           "MvvmLightLibs": "5.4.1.1",
           "NETStandard.Library": "2.0.3",
+          "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.8.116"
@@ -45,6 +46,17 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Rg.Plugins.Popup/2.0.0.14": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "2.0.0.12",
+            "fileVersion": "2.0.0.12"
+          }
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -193,6 +205,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/2.0.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TGUbBSYtKuoqy/kRMw4apwoUY43DATNPUk7t0FJUJjUYnBAJTbRIr84ZvM8xVRltoIctpm5FfCnuliw6dUDywA==",
+      "path": "rg.plugins.popup/2.0.0.14",
+      "hashPath": "rg.plugins.popup.2.0.0.14.nupkg.sha512"
     },
     "sqlite-net-pcl/1.8.116": {
       "type": "package",

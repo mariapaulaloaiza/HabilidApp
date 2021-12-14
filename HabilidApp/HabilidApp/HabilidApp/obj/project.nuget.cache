@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "66Nubf1y7ACNR4++zLXISeTe5vz4A/R9puxKaqocrRAsiboE8MCHmrTKls8kP00U9SB+xlrunQtfLXqtnzyv0A==",
+  "dgSpecHash": "b7zFgF6V+rr1eiZrzU20UM+GFs/+Th7EVF7XIZuieo2wwSdWoWo00tcT/fp8Tfjz8tK4PLTrrs05ap4XwPmgWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mapau\\source\\repos\\HabilidApp\\HabilidApp\\HabilidApp\\HabilidApp\\HabilidApp.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\mapau\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\mapau\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
     "C:\\Users\\mapau\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\mapau\\.nuget\\packages\\rg.plugins.popup\\2.0.0.14\\rg.plugins.popup.2.0.0.14.nupkg.sha512",
     "C:\\Users\\mapau\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\mapau\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\mapau\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",

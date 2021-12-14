@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HabilidApp.Models;
+using HabilidApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,7 @@ namespace HabilidApp.Views
         public Inicio()
         {
             InitializeComponent();
+            BindingContext = new HabilidadesViewModel();
         }
 
         private async void Historial_Clicked(object sender, EventArgs e)
@@ -36,5 +39,12 @@ namespace HabilidApp.Views
         {
             await Navigation.PushAsync(new AgregarHabilidad());
         }
+
+        private async void ListItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushAsync(new Actividades(e.SelectedItem as HabilidadesModel));
+        }
+
+        
     }
 }

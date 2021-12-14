@@ -61,6 +61,21 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
         }
       },
+      "Rg.Plugins.Popup/2.0.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.657"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -392,6 +407,7 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "MvvmLightLibs": "5.4.1.1",
+          "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.8.116"
@@ -462,6 +478,21 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
           "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Rg.Plugins.Popup/2.0.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.657"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
         }
       },
       "sqlite-net-pcl/1.8.116": {
@@ -773,6 +804,7 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "MvvmLightLibs": "5.4.1.1",
+          "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.8.116"
@@ -845,6 +877,21 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
         }
       },
+      "Rg.Plugins.Popup/2.0.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.657"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -1154,6 +1201,7 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "MvvmLightLibs": "5.4.1.1",
+          "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.8.116"
@@ -1226,6 +1274,21 @@
           "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
         }
       },
+      "Rg.Plugins.Popup/2.0.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.657"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "type": "package",
         "dependencies": {
@@ -1535,6 +1598,7 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "MvvmLightLibs": "5.4.1.1",
+          "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.8.116"
@@ -1807,6 +1871,50 @@
         "lib/xamarin.ios10/GalaSoft.MvvmLight.pdb",
         "mvvmlightlibs.5.4.1.1.nupkg.sha512",
         "mvvmlightlibs.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/2.0.0.14": {
+      "sha512": "TGUbBSYtKuoqy/kRMw4apwoUY43DATNPUk7t0FJUJjUYnBAJTbRIr84ZvM8xVRltoIctpm5FfCnuliw6dUDywA==",
+      "type": "package",
+      "path": "rg.plugins.popup/2.0.0.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.dll",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.pdb",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.xml",
+        "lib/monoandroid90/Rg.Plugins.Popup.dll",
+        "lib/monoandroid90/Rg.Plugins.Popup.pdb",
+        "lib/monoandroid90/Rg.Plugins.Popup.xml",
+        "lib/net472/Rg.Plugins.Popup.dll",
+        "lib/net472/Rg.Plugins.Popup.pdb",
+        "lib/net472/Rg.Plugins.Popup.xml",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.dll",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.pdb",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.xml",
+        "lib/netstandard2.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard2.0/Rg.Plugins.Popup.pdb",
+        "lib/netstandard2.0/Rg.Plugins.Popup.xml",
+        "lib/tizen80/Rg.Plugins.Popup.dll",
+        "lib/tizen80/Rg.Plugins.Popup.pdb",
+        "lib/tizen80/Rg.Plugins.Popup.xml",
+        "lib/xamarinios10/Rg.Plugins.Popup.dll",
+        "lib/xamarinios10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinios10/Rg.Plugins.Popup.xml",
+        "lib/xamarinmac20/Rg.Plugins.Popup.dll",
+        "lib/xamarinmac20/Rg.Plugins.Popup.pdb",
+        "lib/xamarinmac20/Rg.Plugins.Popup.xml",
+        "lib/xamarintvos10/Rg.Plugins.Popup.dll",
+        "lib/xamarintvos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarintvos10/Rg.Plugins.Popup.xml",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.dll",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.xml",
+        "readme.txt",
+        "rg.plugins.popup.2.0.0.14.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "sqlite-net-pcl/1.8.116": {
@@ -2609,6 +2717,7 @@
     "Xamarin.iOS,Version=v1.0": [
       "HabilidApp >= 1.0.0",
       "MvvmLightLibs >= 5.4.1.1",
+      "Rg.Plugins.Popup >= 2.0.0.14",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
@@ -2658,6 +2767,10 @@
           "MvvmLightLibs": {
             "target": "Package",
             "version": "[5.4.1.1, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[2.0.0.14, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

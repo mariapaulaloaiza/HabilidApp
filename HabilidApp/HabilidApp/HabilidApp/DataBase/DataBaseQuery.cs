@@ -16,6 +16,10 @@ namespace HabilidApp.DataBase
             _database = new SQLiteAsyncConnection(dbPath);
 
             _database.CreateTableAsync<UserModel>().Wait();
+
+            _database.CreateTableAsync<HabilidadesModel>().Wait();
+
+            _database.CreateTableAsync<ActividadesModel>().Wait();
         }
 
         #region CRUD
@@ -58,6 +62,11 @@ namespace HabilidApp.DataBase
             return _database.QueryAsync<UserModel>("SELECT * FROM UserModel WHERE Correo = '"+correo+"' AND Clave = '"+clave+"' ");
         }
 
+        //public Task<List<HabilidadesModel>> GetHabilidadesModel(bool terminado)
+        //{
+        //    return _database.QueryAsync<HabilidadesModel>("SELECT * FROM UserModel WHERE Terminado = false"); ;
+        //}
+
         public Task<List<T>> QueryModel<T>(string query) where T : new()
         {
             return _database.QueryAsync<T>(query);
@@ -67,6 +76,12 @@ namespace HabilidApp.DataBase
         {
             return _database.Table<UserModel>().Where(i => i.Correo == correo && i.Clave == clave).FirstOrDefaultAsync();
         }
+
+        public Task<List<HabilidadesModel>> GetHabilidadesModel(bool terminado)
+        {
+            return _database.Table<HabilidadesModel>().Where(i => i.Terminado == terminado).ToListAsync();
+        }
+
 
         #endregion
     }

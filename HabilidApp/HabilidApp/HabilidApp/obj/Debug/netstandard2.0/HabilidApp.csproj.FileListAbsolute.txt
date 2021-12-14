@@ -21,3 +21,6 @@ C:\Users\mapau\Source\Repos\HabilidApp\HabilidApp\HabilidApp\HabilidApp\obj\Debu
 C:\Users\mapau\Source\Repos\HabilidApp\HabilidApp\HabilidApp\HabilidApp\obj\Debug\netstandard2.0\Views\Historial.xaml.g.cs
 C:\Users\mapau\Source\Repos\HabilidApp\HabilidApp\HabilidApp\HabilidApp\obj\Debug\netstandard2.0\Views\Inicio.xaml.g.cs
 C:\Users\mapau\Source\Repos\HabilidApp\HabilidApp\HabilidApp\HabilidApp\obj\Debug\netstandard2.0\Views\Perfil.xaml.g.cs
+C:\Users\mapau\source\repos\HabilidApp\HabilidApp\HabilidApp\HabilidApp\obj\Debug\netstandard2.0\Views\EditarHabilidad.xaml.g.cs
+C:\Users\mapau\source\repos\HabilidApp\HabilidApp\HabilidApp\HabilidApp\obj\Debug\netstandard2.0\Views\PopUp\PopUpCreateActividad.xaml.g.cs
+C:\Users\mapau\source\repos\HabilidApp\HabilidApp\HabilidApp\HabilidApp\obj\Debug\netstandard2.0\Views\ActividadXhabilidad.xaml.g.cs
