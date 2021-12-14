@@ -22,12 +22,6 @@
                        HorizontalOptions="Start"
                        ></Label>
 
-                <Label Margin="200,0,0,0" 
-                       FontFamily="Icons"
-                       Text="{x:Static Font_icons:IconFonts.Star}"
-                       TextColor="Gold"
-                       FontSize="20"
-                       HorizontalOptions="End" ></Label>
 
             </StackLayout>
 
@@ -85,9 +79,9 @@
 
             <StackLayout Grid.Row="5" Orientation="Horizontal">
                 
-                <Button Style="{StaticResource button1}"
+               <!-- <Button Style="{StaticResource button1}"
                         Text="Historial"
-                        Clicked="Historial_Clicked" HorizontalOptions="FillAndExpand"></Button>
+                        Clicked="Historial_Clicked" HorizontalOptions="FillAndExpand"></Button> -->
                 
                 <Button Style="{StaticResource button1}"
                         Text="Perfil"

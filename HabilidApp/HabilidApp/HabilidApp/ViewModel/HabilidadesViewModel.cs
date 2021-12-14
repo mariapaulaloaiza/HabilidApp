@@ -135,6 +135,15 @@ namespace HabilidApp.ViewModel
             set { }
         }
 
+        public ICommand DeleteCommand
+        {
+            get
+            {
+                return new RelayCommand(DeleteHabilidadMethod);
+            }
+            set { }
+        }
+
 
 
         #endregion
@@ -189,7 +198,29 @@ namespace HabilidApp.ViewModel
 
         }
 
-     
+        public async void DeleteHabilidadMethod()
+        {
+            var Habilidad = new HabilidadesModel();
+
+            Habilidad.idHabilidad = idHabilidad;
+
+            Habilidad.NombreHabilidad = NombreHabilidad;
+
+            Habilidad.HorasInvertidas = 0;
+
+            Habilidad.Terminado = false;
+
+            Habilidad.Notificacion = Notificacion;
+
+            Habilidad.HoraNotificacion = HoraNotificacion;
+
+            await App.Db.DeleteModelAsync<HabilidadesModel>(Habilidad);
+
+            await Application.Current.MainPage.DisplayAlert("Eliminado exitoso", "Se elimino exitosamente", "Aceptar");
+
+            await Application.Current.MainPage.Navigation.PushAsync(new Inicio(), true);
+        }
+
 
 
         #endregion

@@ -13,18 +13,17 @@ using Xamarin.Forms.Xaml;
 namespace HabilidApp.Views.PopUp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PopUpCreateActividad
+    public partial class PopUpUpdateActividad
     {
-        public PopUpCreateActividad()
+        public PopUpUpdateActividad()
         {
             InitializeComponent();
-            BindingContext = new ActividadesViewModel();
         }
 
-        public PopUpCreateActividad(HabilidadesModel habilidad)
+        public PopUpUpdateActividad(ActividadesModel item, HabilidadesModel habilidad)
         {
             InitializeComponent();
-            BindingContext = new ActividadesViewModel(habilidad);
+            BindingContext = new ActividadesViewModel(item,habilidad);
         }
 
         private async void salir_Clicked(object sender, EventArgs e)

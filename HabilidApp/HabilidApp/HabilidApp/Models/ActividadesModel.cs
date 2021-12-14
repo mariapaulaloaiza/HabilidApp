@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HabilidApp.Models
 {
-    class ActividadesModel
+   public class ActividadesModel
     {
         [PrimaryKey, AutoIncrement]
         public int idActividad { get; set; }

@@ -35,6 +35,12 @@ namespace HabilidApp.DataBase
             }
         }
 
+        public Task<int> DeleteModelAsync<T>(T model) where T : new()
+        {
+
+            return _database.DeleteAsync(model);
+
+        }
         public Task<int> SaveModel<T>(T model, bool isInsert) where T : new()
         {
             if (isInsert)
@@ -80,6 +86,11 @@ namespace HabilidApp.DataBase
         public Task<List<HabilidadesModel>> GetHabilidadesModel(bool terminado)
         {
             return _database.Table<HabilidadesModel>().Where(i => i.Terminado == terminado).ToListAsync();
+        }
+
+        public Task<List<ActividadesModel>> GetActividadesModel(int idHabilidad)
+        {
+            return _database.Table<ActividadesModel>().Where(i => i.idHabilidad == idHabilidad).ToListAsync();
         }
 
 

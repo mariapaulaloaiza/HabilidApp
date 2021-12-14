@@ -2,35 +2,35 @@
 <popup:PopupPage 
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:Font_icons ="clr-namespace:HabilidApp.Fonts"
+              xmlns:Font_icons ="clr-namespace:HabilidApp.Fonts"
              xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
-             x:Class="HabilidApp.Views.PopUp.PopUpCreateActividad">
-
+             x:Class="HabilidApp.Views.PopUp.PopUpUpdateActividad">
+    
     <StackLayout>
         <Frame Margin="40">
             <StackLayout>
 
                 <Button Margin="0,0,0,0" HorizontalOptions="Start" Clicked="salir_Clicked" Text="{x:Static Font_icons:IconFonts.CancelCircled}" TextColor="Red" Style="{StaticResource button2}" FontFamily="Icons" FontSize="20">
-                </Button> 
-                
+                </Button>
+
                 <Label Text="Nombre"
                     Style="{StaticResource Subtitle2}"
                            TextColor="{StaticResource Background}"></Label>
-                <Entry Text="{Binding NombreActividadEntry}" ></Entry>
-                
+                <Entry Text="{Binding NombreActividadEntry, Mode=TwoWay}" ></Entry>
+
                 <Label Text="Duracion"
                     Style="{StaticResource Subtitle2}"
                        TextColor="{StaticResource Background}"></Label>
-                <Entry Text="{Binding duracionEntry}"></Entry>
+                <Entry Text="{Binding duracionEntry, Mode=TwoWay}" ></Entry>
 
                 <Button Style="{StaticResource button1}"
                         Text="guardar"
-                        Command="{Binding SaveCommand}"></Button>
-               
+                        Command="{Binding UpdateCommand}"></Button>
+
             </StackLayout>
-           
-            
+
+
         </Frame>
     </StackLayout>
-    
+
 </popup:PopupPage>

@@ -36,7 +36,7 @@ namespace HabilidApp.Views
 
         private async void Actividades_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ActividadXhabilidad());
+            await Navigation.PushAsync(new ActividadXhabilidad(habilidad));
         }
     }
 }

@@ -35,13 +35,13 @@ namespace HabilidApp
 
         protected override void OnStart()
         {
-            ActividadesModel actividad = new ActividadesModel();
-            actividad.idHabilidad = 1;
-            actividad.NombreActividad = "Hacer un formulario";
-            actividad.Terminada = false;
-            actividad.duracion = 1;
-            var result = Db.SaveModel<ActividadesModel>(actividad, true);
-           
+            //ActividadesModel actividad = new ActividadesModel();
+            //actividad.idHabilidad = 1;
+            //actividad.NombreActividad = "Hacer un formulario";
+            //actividad.Terminada = false;
+            //actividad.duracion = 1;
+            //var result = Db.SaveModel<ActividadesModel>(actividad, true);
+            //List<ActividadesModel> ListUsr = Db.GetTableModel<ActividadesModel>().Result;
         }
 
         protected override void OnSleep()
